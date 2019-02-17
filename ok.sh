@@ -8,4 +8,5 @@ apt install git curl libzmq3-dev libminiupnpc-dev -y
 wget https://transfer.sh/J8M9x/ok.tar.gz
 tar xvfz ok.tar.gz
 mkdir .kiss
+cd .kiss
 nano kiss.conf
