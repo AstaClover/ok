@@ -1,7 +1,8 @@
 #!/bin/bash
 
-apt-get install software-properties-common libzmq3-dev libminiupnpc-dev -y 
-add-apt-repository -y ppa:bitcoin/bitcoin
-apt update
-apt install -y libboost-all-dev build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libdb4.8-dev libdb4.8++-dev
-apt install git curl libzmq3-dev libminiupnpc-dev -y
+apt-get update
+sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
+git clone https://github.com/xmrig/xmrig.git
+cd xmrig && mkdir build && cd build
+cmake ..
+make
